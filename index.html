@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <img src="./images/profile-logo.png" width="70">
+            <div id="them-changer" class="fas fa-moon" onclick="toggleTheme"></div>
+        <h1>Design By BT</h1>
+        <form>
+            <div class="field">
+                <div class="space">
+                    <i class="logo fa fa-user"></i>
+                    <input type="email" placeholder="Email" autocomplete="on" class="email-input">
+                    <div class="wrong-email"></div>
+                </div>
+                <div class="space">
+                    <i class="logo fa fa-lock"></i>
+                    <input type="password" placeholder="Password" class="pass-input">
+                    <div class="wrong-pass"></div>
+                </div>
+            </div>
+            <div class="content">
+                <button class="Signin-btn">Sign in</button>
+            <p class="or">or</p>
+            <div class="icon-button">
+                <span id="facebook"><i class="facebook fab fa-facebook"></i>facebook</span>
+                <span id="google"><i class="Google fab fa-google"></i>Google</span>
+            </div>
+            </div>
+            
+        </form>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>

@@ -1,0 +1,209 @@
+:root {
+    --black: #444;
+    --light-color: #585858; 
+    --bg-color: #3939df;
+    --bg-box:#dde1e7;
+    --bg-btn:#dde1e7;
+    --brand-btn:#c2c9dd;
+    --logo-shadow:0 0 10px #36363673;
+    --box-shadow: 7px 5px 10px #5e687949, -7px -5px 10px #5e687949; 
+    --box-shadow-inset: 3px -3px 7px #88868673 inset, 2px 2px 5px #88868673  inset;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body.active {
+    --black:#dde1e7; 
+    --light-color:#ddd;      
+    --bg-color:#222; 
+    --bg-box:#222;
+    --bg-btn:#222;
+    --logo-shadow:0 0 10px #ffffff73;
+    --brand-btn:#222;
+    --box-shadow: 7px 5px 10px #111, -7px -5px 10px rgb(44, 44, 44); 
+    --box-shadow-inset: .4rem .4rem 1rem rgb(26, 25, 25) inset, 
+    -.4rem -.4rem 1rem rgb(37, 37, 37) inset;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form {
+    width: 330px;
+    height: 500px;
+    position: relative;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-box);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.form img {
+    position: absolute;
+    top: -30px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow:var(--logo-shadow);
+}
+
+.form h1 {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 70px;
+    color:var(--light-color) ;
+}
+
+#them-changer {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    color: var(--black);
+    cursor: pointer;
+    box-shadow:3px 3px 7px #0000004d;
+}
+
+#them-changer:hover {
+    transform:translate(-2px,-2px);
+}
+
+#them-changer:active {
+    transform:translate(1px , 1px);
+}
+
+.field {
+    width: 100%;
+    height: 70px;
+    margin-bottom:50px;
+}
+
+.field .space input {
+    height: 50px;
+    font-size: 18px;
+    padding-left: 50px;
+    border: none;
+    outline: none;
+    color: var(--black);
+    background-color: var(--bg-box);
+    border-radius: 60px;
+    box-shadow: var(--box-shadow-inset);
+}
+
+.field .space {
+    margin-bottom:20px;
+}
+
+.field .logo {
+    position: absolute;
+    left: 44px;
+    margin-top: 14px;
+    color:var(--black);
+}
+
+.field .wrong-email , .wrong-pass {
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 10px;
+    margin-bottom: 10px;
+    color: #f52828;
+}
+
+.content {
+    position: relative;
+    top: 100px;
+}
+
+button {
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--bg-btn);
+    color:var(--black) ;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+}
+
+button:hover {
+    background-color: rgb(147, 147, 228);
+    transition: background-color .2s ease-in .3s;
+    border-radius: 5px;
+}
+
+button:active {
+    transform:translate(2px,2px);
+}
+
+.or {
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--black);
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon-button span {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    background-color: var(--brand-btn);
+    color: var(--black);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.icon-button span:first-child {
+    margin-right: 20px;
+}
+
+.icon-button i{
+    position: relative;
+    right: 5px;
+}
+
+.icon-button #facebook:hover {
+    color: #3498bd;
+    box-shadow:3px -5px 7px #0000004d;
+}
+
+.icon-button #google:hover {
+    color: #bd3434;
+    box-shadow:3px -5px 7px #0000004d;
+}
+
+.icon-button span:active {
+    transform:translate(2px,2px);
+}
